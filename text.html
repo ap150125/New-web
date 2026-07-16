@@ -1,28 +1,84 @@
 <!DOCTYPE html>
-<html>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <head><title>IRON MAN</title>
-<style>
-    .p1{
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 28px;
-        font-weight: bold;
-        text-align: center;
-        white-space: pre-line;
-        color: red;
-       
+<html lang="en">
 
-    }
-</style></head>
-<body style="background-color: aqua;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRON MAN</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            background-color:aqua;
+            font-family:'Times New Roman', Times, serif;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            min-height:100vh;
+            padding:20px;
+        }
+
+        .p1{
+            font-size:clamp(24px,5vw,40px);
+            font-weight:bold;
+            text-align:center;
+            color:red;
+            white-space:pre-line;
+            margin-bottom:30px;
+        }
+
+        .image-container{
+            display:flex;
+            justify-content:center;
+            width:100%;
+        }
+
+        .image-container img{
+            width:75%;
+            max-width:500px;
+            height:auto;
+            border-radius:10px;
+        }
+
+        /* Mobile View */
+        @media (max-width:768px){
+
+            .p1{
+                font-size:28px;
+                padding:0 10px;
+            }
+
+            .image-container img{
+                width:95%;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
     <p class="p1">
-    Hello world 
-    I am IRON-MAN,
-    Mentor to SPIDER-MAN
-</p>
-<div style="display:flex; justify-content: center;">
-<a href="text1.html" target="_blank">    
-<img src="SM.png" width="75%"></a>
-</div>
+Hello World
+I am IRON-MAN,
+Mentor to SPIDER-MAN
+    </p>
+
+    <div class="image-container">
+        <a href="text1.html" target="_blank">
+            <img src="SM.png" alt="Spider-Man">
+        </a>
+    </div>
+
 </body>
+
 </html>
