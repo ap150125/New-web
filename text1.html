@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <title>SPIDER - MAN</title>
+        <style>
+            .music{
+                margin-left: 5%;
+                margin-top: 25%;
+                cursor: pointer;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 22px;
+                color: red;
+                border-color: brown;
+
+            }
+            .music:hover{
+                border-radius: 3px;
+                box-shadow: 8px 8px 15px black;
+            }
+
+            .part{
+                display: flex;
+                flex-direction: row;
+            }
+        </style>
+    </head>
+    <body style="background-color: aqua;">
+        <div class="part">
+        <div class="img"><img src="SM.png" width="300px"></div>
+        <div class="button">
+        <button onclick="toggleAudio()" class="music">Hey Everyone</button>
+        </div>
+        </div>
+        <audio id="myAudio">
+            <source src="h1.mp3" type="audio/mpeg">
+        </audio>
+
+    </body>
+    
+    <script>
+        const audio = document.getElementById("myAudio");
+
+        function toggleAudio() {
+
+                audio.play();
+
+        }
+</script>
+</html>
